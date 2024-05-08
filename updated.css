@@ -1,0 +1,61 @@
+#scroll_btn circle {
+    transition: 1.5s ease;
+}
+
+#scroll_btn circle:hover {
+    /* fill: #EE1C47; */
+    stroke: #EE1C47;
+}
+
+#scroll_btn {
+    cursor: pointer;
+}
+
+svg {
+    width: 80%;
+    display: block;
+    height: 70vh;
+}
+
+@media (max-width: 980px) {
+    .main-home {
+        grid-template-columns: 90%;
+        height: auto;
+        padding-top: 150px;
+    }
+    .main-text {
+        text-align: center;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .svg {
+        text-align: center;
+    }
+    svg {
+        width: 60%;
+        margin: auto;
+        height: auto;
+    }
+    .products {
+        grid-template-columns: 45% 45%;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:780px) {
+    .contact-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width:400px) {
+    .contact-info {
+        display: grid;
+        grid-template-columns: 90%;
+    }
+}
